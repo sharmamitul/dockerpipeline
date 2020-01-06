@@ -42,3 +42,5 @@ $ deploy -H
 
 Configure everything together: 
 $ deploy -a
+
+Creating the CI/CD pipeline to create the infra on single click
