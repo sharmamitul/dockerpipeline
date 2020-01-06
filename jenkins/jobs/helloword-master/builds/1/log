@@ -1,0 +1,23 @@
+Started by an SCM change
+Building in workspace /var/jenkins_home/jobs/helloword-master/workspace
+Cloning the remote Git repository
+Cloning repository git@github.com:sharmamitul/JavaProject.git
+ > git init /var/jenkins_home/jobs/helloword-master/workspace # timeout=10
+Fetching upstream changes from git@github.com:sharmamitul/JavaProject.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git@github.com:sharmamitul/JavaProject.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url git@github.com:sharmamitul/JavaProject.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url git@github.com:sharmamitul/JavaProject.git # timeout=10
+Fetching upstream changes from git@github.com:sharmamitul/JavaProject.git
+ > git -c core.askpass=true fetch --tags --progress git@github.com:sharmamitul/JavaProject.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 157ee76ce127d16ae7e5b4d811b08f3df9871a37 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 157ee76ce127d16ae7e5b4d811b08f3df9871a37
+First time build. Skipping changelog.
+Unpacking https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.3.3/apache-maven-3.3.3-bin.zip to /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.3 on Jenkins
+[workspace] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.3/bin/mvn
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

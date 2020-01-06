@@ -1,0 +1,30 @@
+jenkins:
+  build: ./jenkins
+  ports:
+    - "8080:8080"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /usr/bin/docker:/usr/bin/docker
+    - /opt/jenkins/:/var/lib/jenkins/
+
+gitlab:
+  image: gitlab/gitlab-ce:8.14.4-ce.0
+  restart: always
+  environment:
+    GITLAB_OMNIBUS_CONFIG: |
+      # external_url 'https://gitlab.example.com'
+      # Add any other gitlab.rb configuration here, each on its own line
+  ports:
+    - "8000:80"
+    - "8001:443"
+    - "2222:22"
+  volumes:
+    - /opt/gitlab/config:/etc/gitlab
+    - /opt/gitlab/logs:/var/log/gitlab
+    - /opt/gitlab/data:/var/opt/gitlab
+
+chef-server:
+  image: base/chef-server:latest
+  privileged: true
+  ports:
+   - "443:443"
