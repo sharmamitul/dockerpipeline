@@ -1,0 +1,17 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/helloword-master/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:sharmamitul/JavaProject.git # timeout=10
+Fetching upstream changes from git@github.com:sharmamitul/JavaProject.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git@github.com:sharmamitul/JavaProject.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 157ee76ce127d16ae7e5b4d811b08f3df9871a37 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 157ee76ce127d16ae7e5b4d811b08f3df9871a37
+ > git rev-list 157ee76ce127d16ae7e5b4d811b08f3df9871a37 # timeout=10
+[workspace] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.3/bin/mvn clean deploy
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

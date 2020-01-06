@@ -1,0 +1,57 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/helloword-master/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url git@github.com:sharmamitul/JavaProject.git # timeout=10
+Fetching upstream changes from git@github.com:sharmamitul/JavaProject.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress git@github.com:sharmamitul/JavaProject.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 157ee76ce127d16ae7e5b4d811b08f3df9871a37 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 157ee76ce127d16ae7e5b4d811b08f3df9871a37
+ > git rev-list 157ee76ce127d16ae7e5b4d811b08f3df9871a37 # timeout=10
+[workspace] $ /var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven_3.3.3/bin/mvn -f pom.xml clean package
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Hello World Web Application Repository 1.0.0
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ hello-world-war ---
+[INFO] Deleting /var/jenkins_home/jobs/helloword-master/workspace/target
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hello-world-war ---
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/helloword-master/workspace/src/main/resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hello-world-war ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hello-world-war ---
+[8mha:AAAAYx+LCAAAAAAAAP9b85aBtbiIQSWjNKU4P0+vJLE4u1gvPjexLDVPzxdEhicW5WXmpfvll6S2fNly5fzGzauYGBgqihikoFqS8/OK83NS9ZwhNEghAwQwghQWAACwxA+XYgAAAA==[0m[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /var/jenkins_home/jobs/helloword-master/workspace/src/test/resources
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hello-world-war ---
+[INFO] No sources to compile
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ hello-world-war ---
+[INFO] No tests to run.
+[INFO] 
+[8mha:AAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEGvvmZ+X75ZekLlOVfvTjc8FPJgaGiiIGKaiG5Py84vycVD1nCA1SyAABjCCFBQCV27OjYAAAAA==[0m[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ hello-world-war ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [hello-world-war] in [/var/jenkins_home/jobs/helloword-master/workspace/target/hello-world-war-1.0.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/var/jenkins_home/jobs/helloword-master/workspace/src/main/webapp]
+[INFO] Webapp assembled in [80 msecs]
+[INFO] Building war: /var/jenkins_home/jobs/helloword-master/workspace/target/hello-world-war-1.0.0.war
+[INFO] WEB-INF/web.xml already added, skipping
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.419 s
+[INFO] Finished at: 2017-04-04T08:13:57+00:00
+[INFO] Final Memory: 8M/21M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
